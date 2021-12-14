@@ -1,14 +1,30 @@
 <head>
   <title></title>
 </head>
+
 <body>
   <p>This page is a demo of the JavaScript API "document.get.ElementById()". </p>
   <p>See the Mozilla Foundation web page at <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById" target="_blank">document.get.ElementById() </a> for more info.</p>
-  
-  <p>Clicking these buttons will change the text below,<p>
-  <button onclick="changeInnerHtml();">calc()</button>
-  <button onclick="promptNewInnerHtml();">max()</button>
-  <button onclick="button4();">calc + max</button>
-  
+
+  <p>Clicking these buttons will change the text below,
+  <p>
+    <script type="text/javascript">
+      function hello() {
+        var elem = document.getElementById("para1");
+        var widthPercentage = 9;
+        elem.style.fontSize = 'calc(0.5rem + ' + widthPercentage + '%)';
+        elem.style.fontSize = 'max(2rem, ' + widthPercentage + '%)';
+      }
+      
+      function calc() {
+        var elem = document.getElementById("para1");
+  var widthPercentage = 9;
+  elem.style.fontSize = 'calc(0.5rem + ' + widthPercentage + '%)';
+      }
+    </script>
+    <input type="button" onclick="hello()" />
+    <button onclick="calc();">calc()</button>
+    <button onclick="button4();">calc + max</button>
+
   <p id="para1">Change this text by clicking the buttons.</p>
 </body>
