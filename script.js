@@ -21,5 +21,5 @@ function changeInnerHtml() {
 function promptNewInnerHtml() {
  var elem = document.getElementById("para1");
   var widthPercentage = 9;
-  elem.style.fontSize = 'max(2rem, ' + widthPercentage + '%)';
+  elem.style.fontSize = '20px';
 }
