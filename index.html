@@ -12,6 +12,7 @@
       function hello() {
         var elem = document.getElementById("para1");
         var widthPercentage = 9;
+        elem.style.fontSize = '20px';
         elem.style.fontSize = 'calc(0.5rem + ' + widthPercentage + '%)';
         elem.style.fontSize = 'max(2rem, ' + widthPercentage + '%)';
       }
